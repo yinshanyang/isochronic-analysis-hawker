@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "Yin Shanyang <me@yinshanyang.com> (http://yinshanyang.com)",
@@ -14,5 +13,6 @@
     "commander": "^2.11.0",
     "node-json": "github:yinshanyang/node-json",
     "rxjs": "^5.4.2"
-  }
+  },
+  "devDependencies": {}
 }
