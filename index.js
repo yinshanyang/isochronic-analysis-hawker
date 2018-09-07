@@ -19,7 +19,7 @@ const OUTPUT = program.output || './output/accessibility.geo.json'
 const MINUTES = program.minutes || [15, 30, 45, 60]
 
 // utils
-const pointSet = json.read(path.resolve(__dirname, POINT_SET))
+const pointSet = json.parse(path.resolve(__dirname, POINT_SET))
 
 const getCount = ({ times }) => (minutes) =>
   times
@@ -32,7 +32,7 @@ const features = pointSet.features.map(
     const { index } = feature.properties
     const file = `${path.resolve(__dirname, INPUT)}/${index}.json`
     const results = fs.existsSync(file)
-      ? json.read(file)
+      ? json.parse(file)
       : {times: []}
 
     const _getCount = getCount(results)
@@ -46,4 +46,4 @@ const features = pointSet.features.map(
   }
 )
 
-json.write(path.resolve(__dirname, OUTPUT), turf.featureCollection(features))
+json.format(path.resolve(__dirname, OUTPUT), turf.featureCollection(features))
