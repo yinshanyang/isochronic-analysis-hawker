@@ -8,7 +8,8 @@
   "author": "Yin Shanyang <me@yinshanyang.com> (http://yinshanyang.com)",
   "license": "ISC",
   "dependencies": {
-    "@turf/turf": "^4.6.1",
+    "@turf/boolean-within": "^6.0.1",
+    "@turf/helpers": "^6.1.4",
     "commander": "^2.11.0",
     "node-json": "github:yinshanyang/node-json",
     "rxjs": "^5.4.2"
