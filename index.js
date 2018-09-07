@@ -2,7 +2,6 @@ const fs = require('fs')
 const path = require('path')
 const { featureCollection } = require('@turf/helpers')
 const booleanWithin = require('@turf/boolean-within').default
-const { Observable } = require('rxjs')
 const json = require('node-json')
 const program = require('commander')
 

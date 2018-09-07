@@ -11,8 +11,7 @@
     "@turf/boolean-within": "^6.0.1",
     "@turf/helpers": "^6.1.4",
     "commander": "^2.11.0",
-    "node-json": "github:yinshanyang/node-json",
-    "rxjs": "^5.4.2"
+    "node-json": "github:yinshanyang/node-json"
   },
   "devDependencies": {}
 }
